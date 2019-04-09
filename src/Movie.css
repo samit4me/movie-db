@@ -1,0 +1,74 @@
+.Movie .Poster:before {
+  visibility: hidden;
+  content: attr(data-rating);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 0.75em;
+  height: 25px;
+  width: 40px;
+  text-align: center;
+}
+
+.Movie .Poster[data-rating]:before {
+  visibility: visible;
+}
+
+.Movie .Poster.HighRating:before {
+  background-color: rgb(3, 181, 108);
+}
+
+.Movie .Poster.AverageRating:before {
+  background-color: rgb(73, 3, 163);
+}
+
+.Movie .Poster.PoorRating:before {
+  background-color: rgb(209, 34, 90);
+}
+
+.Movie .Poster img {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.Movie .Poster {
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.Movie .Poster:hover,
+.Movie .Rating:hover {
+  transform: scale(1.1);
+}
+
+.Movie .Poster:hover > img {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.Movie .Title,
+.Movie .Date {
+  width: 133px;
+}
+
+.Movie .Title {
+  padding: 5px 0;
+  font-size: 0.9em;
+}
+
+.Movie .Date {
+  padding: 5px 0;
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+@media (min-width: 600px) {
+  .Movie .Poster img {
+    height: 300px;
+  }
+  .Movie .Title,
+  .Movie .Date {
+    width: 200px;
+  }
+}

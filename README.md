@@ -1,3 +1,18 @@
+## Notes
+
+Ran out of time, below is a few outstanding items:
+
+- Add enzyme and test component output.
+- Improve handling of empty bad data.
+- Debounce search.
+- Maintain search state so it persists between page navigations.
+- Display images more efficiently (e.g. srcset).
+- Move to a more scalable CSS solutions (e.g. styled-components, etc).
+- Add e2e tests and some screen snapshot comparison tests.
+- Most likely other stuff 👍
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

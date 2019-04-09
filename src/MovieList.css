@@ -1,0 +1,21 @@
+.MovieList ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.MovieList ul li {
+  position: relative;
+  width: 150px;
+  padding: 0 0 15px 0;
+}
+
+
+@media (min-width: 600px) {
+  .MovieList ul li {
+    width: 220px;
+  }
+}

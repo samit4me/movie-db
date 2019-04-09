@@ -1,0 +1,31 @@
+.MovieSearch {
+  position: relative;
+}
+
+.MovieSearch input {
+  color: rgb(3, 181, 108);
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  padding: 0 40px 0 15px;
+  outline: none;
+  font-size: 1em;
+}
+
+.MovieSearch:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  fill: rgb(3, 181, 108);
+  background-image: url(images/iconSearch.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.MovieSearch input::placeholder {
+  color: rgb(3, 181, 108);
+}

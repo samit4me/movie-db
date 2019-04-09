@@ -1,0 +1,103 @@
+.MovieDetailsLoading,
+.MovieDetailsError {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.MovieDetails .Backdrop {
+  position: relative;
+  padding-bottom: 30.3%;
+  overflow: hidden;
+}
+
+.MovieDetails .Backdrop img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+.MovieDetails .Backdrop .Overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.MovieDetails .Backdrop .GoBack {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #ffffff;
+  background-image: url(images/iconBackspace.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.MovieDetails .Content {
+  position: relative;
+  margin-top: -25px;
+  padding: 10px 30px;
+}
+
+.MovieDetails .Content img {
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.MovieDetails .Content .HeadingContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.MovieDetails .Content .HeadingContainer .HeadingText {
+  flex-direction: column;
+  padding: 0 0 30px 30px;
+}
+
+.MovieDetails .Content .Meta {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.MovieDetails .Content p {
+  max-width: 600px;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+@media (min-width: 400px) {
+  .MovieDetails .Content {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 500px) {
+  .MovieDetails .Content {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: 600px) {
+  .MovieDetails .Content {
+    margin-top: -125px;
+  }
+  .MovieDetails .Content img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 700px) {
+  .MovieDetails .Content {
+    margin-top: -150px;
+  }
+}
